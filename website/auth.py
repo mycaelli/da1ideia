@@ -16,7 +16,7 @@ def logout():
 
 @auth.route('/profile')
 def profile():
-    return render_template('base.html')
+    return render_template('profile.html')
 
 @auth.route('/social')
 def social():

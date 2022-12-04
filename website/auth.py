@@ -2,7 +2,7 @@ from flask import Blueprint, render_template, request, flash, redirect, url_for
 
 auth = Blueprint('auth', __name__)
 
-@auth.route('/sign-up')
+@auth.route('/sign_up')
 def sign_up():
     return render_template("sign_up.html")
 
@@ -17,6 +17,10 @@ def logout():
 @auth.route('/profile')
 def profile():
     return render_template('profile.html')
+
+@auth.route('/user')
+def user():
+    return render_template('user.html')
 
 @auth.route('/social')
 def social():
